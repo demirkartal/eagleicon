@@ -13,8 +13,9 @@
     "dist/"
   ],
   "scripts": {
-    "build-sass": "sass --style=expanded src/scss/eagleicon.scss:dist/css/eagleicon.css",
-    "test": "echo \"No tests specified\" && exit 0"
+    "build": "npm run build:sass",
+    "build:sass": "sass --style=expanded src/scss/eagleicon.scss:dist/css/eagleicon.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "sass": "^1.90.0"
