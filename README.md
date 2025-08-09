@@ -1,8 +1,8 @@
 # EagleICON
 
-A lightweight and customizable SVG icon library.
+[![NPM](https://badgen.net/npm/v/@demirkartal/eagleicon)](https://www.npmjs.com/package/@demirkartal/eagleicon)
 
-## Features
+EagleIcon is a lightweight and customizable SVG icon library.
 
 - Lightweight and fast
 - Monospace design
