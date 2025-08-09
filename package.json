@@ -6,6 +6,14 @@
     "icon",
     "svg"
   ],
+  "homepage": "https://github.com/demirkartal/eagleicon",
+  "bugs": {
+    "url": "https://github.com/demirkartal/eagleicon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demirkartal/eagleicon.git"
+  },
   "license": "MIT",
   "author": "Cem Demirkartal",
   "main": "dist/css/eagleicon.css",
@@ -15,7 +23,7 @@
   "scripts": {
     "build": "npm run build:sass",
     "build:sass": "sass --style=expanded src/scss/eagleicon.scss:dist/css/eagleicon.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "devDependencies": {
     "sass": "^1.90.0"
