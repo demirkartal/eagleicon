@@ -1,0 +1,21 @@
+{
+  "name": "@demirkartal/eagleicon",
+  "version": "0.0.3",
+  "description": "Lightweight SVG icon library",
+  "keywords": [
+    "icon",
+    "svg"
+  ],
+  "license": "MIT",
+  "author": "Cem Demirkartal",
+  "main": "dist/css/eagleicon.css",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build-sass": "sass --style=expanded src/scss/eagleicon.scss:dist/css/eagleicon.css"
+  },
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}

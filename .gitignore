@@ -1,0 +1,8 @@
+/node_modules/
+.eslintcache
+/src/img
+
+# Editors
+/.idea/
+/.vscode/
+/nbproject/
