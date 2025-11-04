@@ -1,3 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-  <path d="M4 7l0 5 5 0m3 -3l0 -5 -5 0" fill="none" stroke="currentColor" transform="rotate(45,8,8)"/>
+  <path fill="none" stroke="currentColor" stroke-width="2" d="M4 7v5h5m3-3V4H7" transform="rotate(-45,8,8)"/>
 </svg>
