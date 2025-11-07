@@ -3,7 +3,10 @@
  * Copyright 2022-2025 Cem Demirkartal
  * Licensed under the MIT License
  */
-.eagleicon {
+
+$icon-prefix: "eagleicon";
+
+.#{$icon-prefix} {
   fill: currentColor;
   display: inline-block;
   margin-top: -0.1em;
@@ -17,48 +20,48 @@
 }
 
 /* Size helpers */
-.eagleicon-sm {
+.#{$icon-prefix}-sm {
   font-size: 0.75em;
 }
 
-.eagleicon-lg {
+.#{$icon-prefix}-lg {
   font-size: 1.5em;
 }
 
-.eagleicon-2x {
+.#{$icon-prefix}-2x {
   font-size: 2em;
 }
 
-.eagleicon-3x {
+.#{$icon-prefix}-3x {
   font-size: 3em;
 }
 
-.eagleicon-4x {
+.#{$icon-prefix}-4x {
   font-size: 4em;
 }
 
-.eagleicon-5x {
+.#{$icon-prefix}-5x {
   font-size: 5em;
 }
 
 /* Rotation helpers */
-.eagleicon-rotate-90 {
+.#{$icon-prefix}-rotate-90 {
   transform: rotate(90deg);
 }
 
-.eagleicon-rotate-180 {
+.#{$icon-prefix}-rotate-180 {
   transform: rotate(180deg);
 }
 
-.eagleicon-rotate-270 {
+.#{$icon-prefix}-rotate-270 {
   transform: rotate(270deg);
 }
 
 /* Flip helpers */
-.eagleicon-flip-horizontal {
+.#{$icon-prefix}-flip-horizontal {
   transform: scaleX(-1);
 }
 
-.eagleicon-flip-vertical {
+.#{$icon-prefix}-flip-vertical {
   transform: scaleY(-1);
 }
