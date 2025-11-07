@@ -1,14 +1,66 @@
 /*!
- * EagleICON v0.0.3
+ * EagleICON v0.0.4
  * Copyright 2022-2025 Cem Demirkartal
  * Licensed under the MIT License
  */
-.eicon {
+.eagleicon {
   fill: currentColor;
+  display: inline-block;
   margin-top: -0.1em;
+  width: 1em;
   height: 1em;
+  font-size: inherit;
   line-height: 0.5em;
   vertical-align: middle;
+  user-select: none;
+  text-align: center;
+}
+
+/* Size helpers */
+.eagleicon-sm {
+  font-size: 0.75em;
+}
+
+.eagleicon-lg {
+  font-size: 1.5em;
+}
+
+.eagleicon-2x {
+  font-size: 2em;
+}
+
+.eagleicon-3x {
+  font-size: 3em;
+}
+
+.eagleicon-4x {
+  font-size: 4em;
+}
+
+.eagleicon-5x {
+  font-size: 5em;
+}
+
+/* Rotation helpers */
+.eagleicon-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.eagleicon-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.eagleicon-rotate-270 {
+  transform: rotate(270deg);
+}
+
+/* Flip helpers */
+.eagleicon-flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.eagleicon-flip-vertical {
+  transform: scaleY(-1);
 }
 
 /*# sourceMappingURL=eagleicon.css.map */
