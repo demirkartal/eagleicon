@@ -1,6 +1,6 @@
 {
   "name": "@demirkartal/eagleicon",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Lightweight SVG icon library",
   "keywords": [
     "icon",
@@ -21,11 +21,23 @@
     "dist/"
   ],
   "scripts": {
-    "build": "npm run build:sass",
+    "build": "npm run build:sass && npm run build:tsc",
     "build:sass": "sass --style=expanded src/scss/eagleicon.scss:dist/css/eagleicon.css",
-    "test": "echo \"No tests specified\" && exit 0"
+    "build:tsc": "npm run lint:fix && npm run tsc:build && npm run lint:fix-build",
+    "lint": "eslint src/",
+    "lint:build": "eslint dist/",
+    "lint:fix": "eslint --fix src/",
+    "lint:fix-build": "eslint --fix dist/",
+    "test": "echo \"No tests specified\" && exit 0",
+    "tsc:build": "tsc"
   },
   "devDependencies": {
-    "sass": "^1.90.0"
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "sass": "^1.93.3",
+    "terser": "^5.44.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
   }
 }
