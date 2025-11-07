@@ -1,0 +1,156 @@
+[
+  {
+    "id": "arrow-down",
+    "name": "Arrow Down",
+    "category": "Navigation",
+    "tags": ["arrow", "down"],
+    "fileName": "arrow-down.svg"
+  },
+  {
+    "id": "arrow-left",
+    "name": "Arrow Left",
+    "category": "Navigation",
+    "tags": ["arrow", "left"],
+    "fileName": "arrow-left.svg"
+  },
+  {
+    "id": "arrow-right",
+    "name": "Arrow Right",
+    "category": "Navigation",
+    "tags": ["arrow", "right"],
+    "fileName": "arrow-right.svg"
+  },
+  {
+    "id": "arrow-up",
+    "name": "Arrow Up",
+    "category": "Navigation",
+    "tags": ["arrow", "up"],
+    "fileName": "arrow-up.svg"
+  },
+  {
+    "id": "bars",
+    "name": "Bars",
+    "category": "Menu",
+    "tags": ["menu", "hamburger"],
+    "fileName": "bars.svg"
+  },
+  {
+    "id": "chevron-down",
+    "name": "Chevron Down",
+    "category": "Navigation",
+    "tags": ["arrow", "down"],
+    "fileName": "chevron-down.svg"
+  },
+  {
+    "id": "chevron-left",
+    "name": "Chevron Left",
+    "category": "Navigation",
+    "tags": ["arrow", "left"],
+    "fileName": "chevron-left.svg"
+  },
+  {
+    "id": "chevron-right",
+    "name": "Chevron Right",
+    "category": "Navigation",
+    "tags": ["arrow", "right"],
+    "fileName": "chevron-right.svg"
+  },
+  {
+    "id": "chevron-up",
+    "name": "Chevron Up",
+    "category": "Navigation",
+    "tags": ["arrow", "up"],
+    "fileName": "chevron-up.svg"
+  },
+  {
+    "id": "circle",
+    "name": "Circle",
+    "category": "Shape",
+    "tags": ["round", "geometry"],
+    "fileName": "circle.svg"
+  },
+  {
+    "id": "globe",
+    "name": "Globe",
+    "category": "Navigation",
+    "tags": ["world", "web", "earth"],
+    "fileName": "globe.svg"
+  },
+  {
+    "id": "minus",
+    "name": "Minus",
+    "category": "Action",
+    "tags": ["remove", "subtract"],
+    "fileName": "minus.svg"
+  },
+  {
+    "id": "phone",
+    "name": "Phone",
+    "category": "Device",
+    "tags": ["call", "contact"],
+    "fileName": "phone.svg"
+  },
+  {
+    "id": "plus",
+    "name": "Plus",
+    "category": "Action",
+    "tags": ["add", "new"],
+    "fileName": "plus.svg"
+  },
+  {
+    "id": "search",
+    "name": "Search",
+    "category": "Action",
+    "tags": ["find", "magnify"],
+    "fileName": "search.svg"
+  },
+  {
+    "id": "sort",
+    "name": "Sort",
+    "category": "Action",
+    "tags": ["order", "arrange"],
+    "fileName": "sort.svg"
+  },
+  {
+    "id": "sort-down",
+    "name": "Sort Down",
+    "category": "Action",
+    "tags": ["order", "descending"],
+    "fileName": "sort-down.svg"
+  },
+  {
+    "id": "sort-up",
+    "name": "Sort Up",
+    "category": "Action",
+    "tags": ["order", "ascending"],
+    "fileName": "sort-up.svg"
+  },
+  {
+    "id": "square",
+    "name": "Square",
+    "category": "Shape",
+    "tags": ["box", "geometry"],
+    "fileName": "square.svg"
+  },
+  {
+    "id": "star",
+    "name": "Star",
+    "category": "Rating",
+    "tags": ["favorite", "bookmark", "rate"],
+    "fileName": "star.svg"
+  },
+  {
+    "id": "times",
+    "name": "Times",
+    "category": "Action",
+    "tags": ["close", "remove", "cancel"],
+    "fileName": "times.svg"
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "category": "Social",
+    "tags": ["chat", "message", "social"],
+    "fileName": "whatsapp.svg"
+  }
+]
