@@ -1,6 +1,7 @@
 import eslint from '@eslint/js';
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
+import tsdoc from 'eslint-plugin-tsdoc';
 import tseslint from 'typescript-eslint';
 
 export default [
@@ -29,6 +30,9 @@ export default [
   tseslint.configs.eslintRecommended,
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
+    plugins: {
+      tsdoc: tsdoc,
+    },
     languageOptions: {
       parserOptions: {
         project: './tsconfig.base.json',
@@ -37,6 +41,7 @@ export default [
     rules: {
       ...tseslint.configs.strictTypeChecked[2].rules,
       ...tseslint.configs.stylisticTypeChecked[2].rules,
+      'tsdoc/syntax': 'warn',
     },
   },
 ];
