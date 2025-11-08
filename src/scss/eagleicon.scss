@@ -7,16 +7,16 @@
 $icon-prefix: "eagleicon";
 
 .#{$icon-prefix} {
-  fill: currentColor;
   display: inline-block;
-  margin-top: -0.1em;
   width: 1em;
   height: 1em;
-  font-size: inherit;
-  line-height: 0.5em;
+  margin-top: -0.1em;
   vertical-align: middle;
-  user-select: none;
   text-align: center;
+  line-height: 0.5em;
+  font-size: inherit;
+  color: inherit;
+  user-select: none;
 }
 
 /* Size helpers */
@@ -64,4 +64,26 @@ $icon-prefix: "eagleicon";
 
 .#{$icon-prefix}-flip-vertical {
   transform: scaleY(-1);
+}
+
+/* Stroke linecap helpers */
+.#{$icon-prefix}-linecap-round {
+  stroke-linecap: round;
+}
+.#{$icon-prefix}-linecap-square {
+  stroke-linecap: square;
+}
+.#{$icon-prefix}-linecap-butt {
+  stroke-linecap: butt;
+}
+
+/* Stroke linejoin helpers */
+.#{$icon-prefix}-linejoin-round {
+  stroke-linejoin: round;
+}
+.#{$icon-prefix}-linejoin-bevel {
+  stroke-linejoin: bevel;
+}
+.#{$icon-prefix}-linejoin-miter {
+  stroke-linejoin: miter;
 }
