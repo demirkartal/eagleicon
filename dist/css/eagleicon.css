@@ -4,16 +4,16 @@
  * Licensed under the MIT License
  */
 .eagleicon {
-  fill: currentColor;
   display: inline-block;
-  margin-top: -0.1em;
   width: 1em;
   height: 1em;
-  font-size: inherit;
-  line-height: 0.5em;
+  margin-top: -0.1em;
   vertical-align: middle;
-  user-select: none;
   text-align: center;
+  line-height: 0.5em;
+  font-size: inherit;
+  color: inherit;
+  user-select: none;
 }
 
 /* Size helpers */
@@ -61,6 +61,32 @@
 
 .eagleicon-flip-vertical {
   transform: scaleY(-1);
+}
+
+/* Stroke linecap helpers */
+.eagleicon-linecap-round {
+  stroke-linecap: round;
+}
+
+.eagleicon-linecap-square {
+  stroke-linecap: square;
+}
+
+.eagleicon-linecap-butt {
+  stroke-linecap: butt;
+}
+
+/* Stroke linejoin helpers */
+.eagleicon-linejoin-round {
+  stroke-linejoin: round;
+}
+
+.eagleicon-linejoin-bevel {
+  stroke-linejoin: bevel;
+}
+
+.eagleicon-linejoin-miter {
+  stroke-linejoin: miter;
 }
 
 /*# sourceMappingURL=eagleicon.css.map */
