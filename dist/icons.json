@@ -3,154 +3,208 @@
     "id": "arrow-down",
     "name": "Arrow Down",
     "category": "Navigation",
-    "tags": ["arrow", "down"],
-    "fileName": "arrow-down.svg"
+    "type": "stroke",
+    "fileName": "arrow-down.svg",
+    "tags": ["arrow", "down"]
   },
   {
     "id": "arrow-left",
     "name": "Arrow Left",
     "category": "Navigation",
-    "tags": ["arrow", "left"],
-    "fileName": "arrow-left.svg"
+    "type": "stroke",
+    "fileName": "arrow-left.svg",
+    "tags": ["arrow", "left"]
   },
   {
     "id": "arrow-right",
     "name": "Arrow Right",
     "category": "Navigation",
-    "tags": ["arrow", "right"],
-    "fileName": "arrow-right.svg"
+    "type": "stroke",
+    "fileName": "arrow-right.svg",
+    "tags": ["arrow", "right"]
   },
   {
     "id": "arrow-up",
     "name": "Arrow Up",
     "category": "Navigation",
-    "tags": ["arrow", "up"],
-    "fileName": "arrow-up.svg"
-  },
-  {
-    "id": "bars",
-    "name": "Bars",
-    "category": "Menu",
-    "tags": ["menu", "hamburger"],
-    "fileName": "bars.svg"
+    "type": "stroke",
+    "fileName": "arrow-up.svg",
+    "tags": ["arrow", "up"]
   },
   {
     "id": "chevron-down",
     "name": "Chevron Down",
     "category": "Navigation",
-    "tags": ["arrow", "down"],
-    "fileName": "chevron-down.svg"
+    "type": "stroke",
+    "fileName": "chevron-down.svg",
+    "tags": ["arrow", "down"]
   },
   {
     "id": "chevron-left",
     "name": "Chevron Left",
     "category": "Navigation",
-    "tags": ["arrow", "left"],
-    "fileName": "chevron-left.svg"
+    "type": "stroke",
+    "fileName": "chevron-left.svg",
+    "tags": ["arrow", "left"]
   },
   {
     "id": "chevron-right",
     "name": "Chevron Right",
     "category": "Navigation",
-    "tags": ["arrow", "right"],
-    "fileName": "chevron-right.svg"
+    "type": "stroke",
+    "fileName": "chevron-right.svg",
+    "tags": ["arrow", "right"]
   },
   {
     "id": "chevron-up",
     "name": "Chevron Up",
     "category": "Navigation",
-    "tags": ["arrow", "up"],
-    "fileName": "chevron-up.svg"
+    "type": "stroke",
+    "fileName": "chevron-up.svg",
+    "tags": ["arrow", "up"]
   },
   {
     "id": "circle",
     "name": "Circle",
     "category": "Shape",
-    "tags": ["round", "geometry"],
-    "fileName": "circle.svg"
+    "type": "stroke",
+    "fileName": "circle.svg",
+    "tags": ["round", "geometry"]
+  },
+  {
+    "id": "circle-fill",
+    "name": "Circle Fill",
+    "category": "Shape",
+    "type": "combined",
+    "fileName": "circle-fill.svg",
+    "tags": ["round", "geometry", "fill"]
+  },
+  {
+    "id": "close",
+    "name": "Close",
+    "category": "Action",
+    "type": "stroke",
+    "fileName": "close.svg",
+    "tags": ["close", "times", "remove", "cancel", "x"]
   },
   {
     "id": "globe",
     "name": "Globe",
     "category": "Navigation",
-    "tags": ["world", "web", "earth"],
-    "fileName": "globe.svg"
+    "type": "stroke",
+    "fileName": "globe.svg",
+    "tags": ["world", "web", "earth"]
+  },
+  {
+    "id": "menu",
+    "name": "Menu",
+    "category": "Menu",
+    "type": "stroke",
+    "fileName": "menu.svg",
+    "tags": ["menu", "bars", "hamburger"]
   },
   {
     "id": "minus",
     "name": "Minus",
     "category": "Action",
-    "tags": ["remove", "subtract"],
-    "fileName": "minus.svg"
+    "type": "stroke",
+    "fileName": "minus.svg",
+    "tags": ["remove", "subtract"]
   },
   {
     "id": "phone",
     "name": "Phone",
     "category": "Device",
-    "tags": ["call", "contact"],
-    "fileName": "phone.svg"
+    "type": "stroke",
+    "fileName": "phone.svg",
+    "tags": ["call", "contact"]
+  },
+  {
+    "id": "phone-fill",
+    "name": "Phone Fill",
+    "category": "Device",
+    "type": "combined",
+    "fileName": "phone-fill.svg",
+    "tags": ["call", "contact", "fill"]
   },
   {
     "id": "plus",
     "name": "Plus",
     "category": "Action",
-    "tags": ["add", "new"],
-    "fileName": "plus.svg"
+    "type": "stroke",
+    "fileName": "plus.svg",
+    "tags": ["add", "new"]
   },
   {
     "id": "search",
     "name": "Search",
     "category": "Action",
-    "tags": ["find", "magnify"],
-    "fileName": "search.svg"
+    "type": "stroke",
+    "fileName": "search.svg",
+    "tags": ["find", "magnify"]
   },
   {
     "id": "sort",
     "name": "Sort",
     "category": "Action",
-    "tags": ["order", "arrange"],
-    "fileName": "sort.svg"
+    "type": "stroke",
+    "fileName": "sort.svg",
+    "tags": ["order", "arrange"]
   },
   {
     "id": "sort-down",
     "name": "Sort Down",
     "category": "Action",
-    "tags": ["order", "descending"],
-    "fileName": "sort-down.svg"
+    "type": "stroke",
+    "fileName": "sort-down.svg",
+    "tags": ["order", "descending"]
   },
   {
     "id": "sort-up",
     "name": "Sort Up",
     "category": "Action",
-    "tags": ["order", "ascending"],
-    "fileName": "sort-up.svg"
+    "type": "stroke",
+    "fileName": "sort-up.svg",
+    "tags": ["order", "ascending"]
   },
   {
     "id": "square",
     "name": "Square",
     "category": "Shape",
-    "tags": ["box", "geometry"],
-    "fileName": "square.svg"
+    "type": "stroke",
+    "fileName": "square.svg",
+    "tags": ["box", "geometry"]
+  },
+  {
+    "id": "square-fill",
+    "name": "Square Fill",
+    "category": "Shape",
+    "type": "combined",
+    "fileName": "square-fill.svg",
+    "tags": ["box", "geometry", "fill"]
   },
   {
     "id": "star",
     "name": "Star",
     "category": "Rating",
-    "tags": ["favorite", "bookmark", "rate"],
-    "fileName": "star.svg"
+    "type": "stroke",
+    "fileName": "star.svg",
+    "tags": ["favorite", "bookmark", "rate"]
   },
   {
-    "id": "times",
-    "name": "Times",
-    "category": "Action",
-    "tags": ["close", "remove", "cancel"],
-    "fileName": "times.svg"
+    "id": "star-fill",
+    "name": "Star Fill",
+    "category": "Rating",
+    "type": "combined",
+    "fileName": "star-fill.svg",
+    "tags": ["favorite", "bookmark", "rate", "fill"]
   },
   {
     "id": "whatsapp",
     "name": "WhatsApp",
     "category": "Social",
-    "tags": ["chat", "message", "social"],
-    "fileName": "whatsapp.svg"
+    "type": "solid",
+    "fileName": "whatsapp.svg",
+    "tags": ["chat", "message", "social"]
   }
 ]
