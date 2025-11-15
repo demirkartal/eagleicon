@@ -53,32 +53,6 @@ $rotations: (45, 90, 135, 180, 225, 270, 315);
   fill: var(--icon-fill);
 }
 
-// Stroke linecap
-.#{$icon-prefix}[data-linecap="round"] {
-  stroke-linecap: round;
-}
-
-.#{$icon-prefix}[data-linecap="square"] {
-  stroke-linecap: square;
-}
-
-.#{$icon-prefix}[data-linecap="butt"] {
-  stroke-linecap: butt;
-}
-
-// Stroke linejoin
-.#{$icon-prefix}[data-linejoin="round"] {
-  stroke-linejoin: round;
-}
-
-.#{$icon-prefix}[data-linejoin="bevel"] {
-  stroke-linejoin: bevel;
-}
-
-.#{$icon-prefix}[data-linejoin="miter"] {
-  stroke-linejoin: miter;
-}
-
 // Stroke width
 $stroke-widths: (0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3);
 @each $w in $stroke-widths {

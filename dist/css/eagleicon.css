@@ -63,30 +63,6 @@
   fill: var(--icon-fill);
 }
 
-.eagleicon[data-linecap=round] {
-  stroke-linecap: round;
-}
-
-.eagleicon[data-linecap=square] {
-  stroke-linecap: square;
-}
-
-.eagleicon[data-linecap=butt] {
-  stroke-linecap: butt;
-}
-
-.eagleicon[data-linejoin=round] {
-  stroke-linejoin: round;
-}
-
-.eagleicon[data-linejoin=bevel] {
-  stroke-linejoin: bevel;
-}
-
-.eagleicon[data-linejoin=miter] {
-  stroke-linejoin: miter;
-}
-
 .eagleicon[data-stroke-width="0.25"] {
   --icon-stroke-width: 0.25;
   stroke-width: 0.25;
