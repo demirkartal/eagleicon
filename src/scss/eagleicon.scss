@@ -2,6 +2,10 @@
  * EagleICON v0.0.4
  * Copyright 2022-2025 Cem Demirkartal
  * Licensed under the MIT License
+ *
+ * NOTE: --icon-fill and --icon-stroke-width are used to transfer
+ * user-defined attribute values (fill, stroke-width) to the SVG sprite
+ * via CSS variables for dynamic styling.
  */
 @use "sass:math";
 @use "sass:list";
@@ -42,22 +46,11 @@ $rotations: (45, 90, 135, 180, 225, 270, 315);
 }
 
 // Fill (native SVG attribute)
-.#{$icon-prefix}[fill="current"],
-.#{$icon-prefix}[fill="currentColor"] {
-  --icon-fill: currentColor;
-  fill: var(--icon-fill);
-}
-
-.#{$icon-prefix}[fill="none"] {
-  --icon-fill: none;
-  fill: var(--icon-fill);
+.#{$icon-prefix}[fill] {
+  --icon-fill: attr(fill);
 }
 
 // Stroke width (native SVG attribute)
-$stroke-widths: (0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3);
-@each $w in $stroke-widths {
-  .#{$icon-prefix}[stroke-width="#{$w}"] {
-    --icon-stroke-width: #{$w};
-    stroke-width: #{$w};
-  }
+.#{$icon-prefix}[stroke-width] {
+  --icon-stroke-width: attr(stroke-width);
 }
