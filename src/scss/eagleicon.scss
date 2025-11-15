@@ -7,13 +7,9 @@
  * user-defined attribute values (fill, stroke-width) to the SVG sprite
  * via CSS variables for dynamic styling.
  */
-@use "sass:math";
-@use "sass:list";
-@use "sass:string";
 
 $icon-prefix: "eagleicon";
 
-// Base icon style
 .#{$icon-prefix} {
   display: inline-block;
   width: 1em;
@@ -26,9 +22,7 @@ $icon-prefix: "eagleicon";
   user-select: none;
 }
 
-/* Attribute-based helpers */
-
-// Rotation
+/* Rotation */
 $rotations: (45, 90, 135, 180, 225, 270, 315);
 @each $deg in $rotations {
   .#{$icon-prefix}[data-rotate="#{$deg}"] {
@@ -36,7 +30,7 @@ $rotations: (45, 90, 135, 180, 225, 270, 315);
   }
 }
 
-// Flip
+/* Flip */
 .#{$icon-prefix}[data-flip="horizontal"] {
   transform: scaleX(-1);
 }
@@ -45,12 +39,12 @@ $rotations: (45, 90, 135, 180, 225, 270, 315);
   transform: scaleY(-1);
 }
 
-// Fill (native SVG attribute)
+/* Fill */
 .#{$icon-prefix}[fill] {
   --icon-fill: attr(fill);
 }
 
-// Stroke width (native SVG attribute)
+/* Stroke width */
 .#{$icon-prefix}[stroke-width] {
   --icon-stroke-width: attr(stroke-width);
 }

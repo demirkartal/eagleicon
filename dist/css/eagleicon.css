@@ -19,7 +19,7 @@
   user-select: none;
 }
 
-/* Attribute-based helpers */
+/* Rotation */
 .eagleicon[data-rotate="45"] {
   transform: rotate(45deg);
 }
@@ -48,6 +48,7 @@
   transform: rotate(315deg);
 }
 
+/* Flip */
 .eagleicon[data-flip=horizontal] {
   transform: scaleX(-1);
 }
@@ -56,10 +57,12 @@
   transform: scaleY(-1);
 }
 
+/* Fill */
 .eagleicon[fill] {
   --icon-fill: attr(fill);
 }
 
+/* Stroke width */
 .eagleicon[stroke-width] {
   --icon-stroke-width: attr(stroke-width);
 }
