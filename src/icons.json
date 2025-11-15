@@ -1,0 +1,184 @@
+[
+  {
+    "id": "arrow-down",
+    "name": "Arrow Down",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["arrow", "down"]
+  },
+  {
+    "id": "arrow-left",
+    "name": "Arrow Left",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["arrow", "left"]
+  },
+  {
+    "id": "arrow-right",
+    "name": "Arrow Right",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["arrow", "right"]
+  },
+  {
+    "id": "arrow-up",
+    "name": "Arrow Up",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["arrow", "up"]
+  },
+  {
+    "id": "chevron-down",
+    "name": "Chevron Down",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["arrow", "down"]
+  },
+  {
+    "id": "chevron-left",
+    "name": "Chevron Left",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["arrow", "left"]
+  },
+  {
+    "id": "chevron-right",
+    "name": "Chevron Right",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["arrow", "right"]
+  },
+  {
+    "id": "chevron-up",
+    "name": "Chevron Up",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["arrow", "up"]
+  },
+  {
+    "id": "circle",
+    "name": "Circle",
+    "category": "Shape",
+    "type": "stroke",
+    "tags": ["round", "geometry"]
+  },
+  {
+    "id": "circle-fill",
+    "name": "Circle Fill",
+    "category": "Shape",
+    "type": "combined",
+    "tags": ["round", "geometry", "fill"]
+  },
+  {
+    "id": "close",
+    "name": "Close",
+    "category": "Action",
+    "type": "stroke",
+    "tags": ["close", "times", "remove", "cancel", "x"]
+  },
+  {
+    "id": "globe",
+    "name": "Globe",
+    "category": "Navigation",
+    "type": "stroke",
+    "tags": ["world", "web", "earth"]
+  },
+  {
+    "id": "menu",
+    "name": "Menu",
+    "category": "Menu",
+    "type": "stroke",
+    "tags": ["menu", "bars", "hamburger"]
+  },
+  {
+    "id": "minus",
+    "name": "Minus",
+    "category": "Action",
+    "type": "stroke",
+    "tags": ["remove", "subtract"]
+  },
+  {
+    "id": "phone",
+    "name": "Phone",
+    "category": "Device",
+    "type": "stroke",
+    "tags": ["call", "contact"]
+  },
+  {
+    "id": "phone-fill",
+    "name": "Phone Fill",
+    "category": "Device",
+    "type": "combined",
+    "tags": ["call", "contact", "fill"]
+  },
+  {
+    "id": "plus",
+    "name": "Plus",
+    "category": "Action",
+    "type": "stroke",
+    "tags": ["add", "new"]
+  },
+  {
+    "id": "search",
+    "name": "Search",
+    "category": "Action",
+    "type": "stroke",
+    "tags": ["find", "magnify"]
+  },
+  {
+    "id": "sort",
+    "name": "Sort",
+    "category": "Action",
+    "type": "stroke",
+    "tags": ["order", "arrange"]
+  },
+  {
+    "id": "sort-down",
+    "name": "Sort Down",
+    "category": "Action",
+    "type": "stroke",
+    "tags": ["order", "descending"]
+  },
+  {
+    "id": "sort-up",
+    "name": "Sort Up",
+    "category": "Action",
+    "type": "stroke",
+    "tags": ["order", "ascending"]
+  },
+  {
+    "id": "square",
+    "name": "Square",
+    "category": "Shape",
+    "type": "stroke",
+    "tags": ["box", "geometry"]
+  },
+  {
+    "id": "square-fill",
+    "name": "Square Fill",
+    "category": "Shape",
+    "type": "combined",
+    "tags": ["box", "geometry", "fill"]
+  },
+  {
+    "id": "star",
+    "name": "Star",
+    "category": "Rating",
+    "type": "stroke",
+    "tags": ["favorite", "bookmark", "rate"]
+  },
+  {
+    "id": "star-fill",
+    "name": "Star Fill",
+    "category": "Rating",
+    "type": "combined",
+    "tags": ["favorite", "bookmark", "rate", "fill"]
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "category": "Social",
+    "type": "solid",
+    "tags": ["chat", "message", "social"]
+  }
+]
