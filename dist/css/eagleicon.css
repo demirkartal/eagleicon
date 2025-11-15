@@ -7,86 +7,65 @@
   display: inline-block;
   width: 1em;
   height: 1em;
-  margin-top: -0.1em;
-  vertical-align: middle;
+  vertical-align: -0.125em;
   text-align: center;
-  line-height: 0.5em;
+  line-height: 1;
   font-size: inherit;
   color: inherit;
   user-select: none;
 }
 
-/* Size helpers */
-.eagleicon-sm {
-  font-size: 0.75em;
+/* Attribute-based helpers */
+.eagleicon[data-rotate] {
+  transform: rotate(attr(data-rotate deg));
 }
 
-.eagleicon-lg {
-  font-size: 1.5em;
-}
-
-.eagleicon-2x {
-  font-size: 2em;
-}
-
-.eagleicon-3x {
-  font-size: 3em;
-}
-
-.eagleicon-4x {
-  font-size: 4em;
-}
-
-.eagleicon-5x {
-  font-size: 5em;
-}
-
-/* Rotation helpers */
-.eagleicon-rotate-90 {
-  transform: rotate(90deg);
-}
-
-.eagleicon-rotate-180 {
-  transform: rotate(180deg);
-}
-
-.eagleicon-rotate-270 {
-  transform: rotate(270deg);
-}
-
-/* Flip helpers */
-.eagleicon-flip-horizontal {
+.eagleicon[data-flip=horizontal] {
   transform: scaleX(-1);
 }
 
-.eagleicon-flip-vertical {
+.eagleicon[data-flip=vertical] {
   transform: scaleY(-1);
 }
 
-/* Stroke linecap helpers */
-.eagleicon-linecap-round {
+.eagleicon[data-fill=current],
+.eagleicon[data-fill=currentColor] {
+  --icon-fill: currentColor;
+  fill: var(--icon-fill);
+}
+
+.eagleicon[data-fill=none] {
+  --icon-fill: none;
+  fill: var(--icon-fill);
+}
+
+.eagleicon[data-linecap=round] {
   stroke-linecap: round;
 }
 
-.eagleicon-linecap-square {
+.eagleicon[data-linecap=square] {
   stroke-linecap: square;
 }
 
-.eagleicon-linecap-butt {
+.eagleicon[data-linecap=butt] {
   stroke-linecap: butt;
 }
 
-/* Stroke linejoin helpers */
-.eagleicon-linejoin-round {
+.eagleicon[data-linejoin=round] {
   stroke-linejoin: round;
 }
 
-.eagleicon-linejoin-bevel {
+.eagleicon[data-linejoin=bevel] {
   stroke-linejoin: bevel;
 }
 
-.eagleicon-linejoin-miter {
+.eagleicon[data-linejoin=miter] {
   stroke-linejoin: miter;
+}
+
+.eagleicon[data-stroke-width] {
+  --icon-stroke-width: attr(data-stroke-width px);
+  stroke-width: var(--icon-stroke-width);
 }
 
 /*# sourceMappingURL=eagleicon.css.map */
