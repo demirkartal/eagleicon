@@ -41,22 +41,22 @@ $rotations: (45, 90, 135, 180, 225, 270, 315);
   transform: scaleY(-1);
 }
 
-// Fill
-.#{$icon-prefix}[data-fill="current"],
-.#{$icon-prefix}[data-fill="currentColor"] {
+// Fill (native SVG attribute)
+.#{$icon-prefix}[fill="current"],
+.#{$icon-prefix}[fill="currentColor"] {
   --icon-fill: currentColor;
   fill: var(--icon-fill);
 }
 
-.#{$icon-prefix}[data-fill="none"] {
+.#{$icon-prefix}[fill="none"] {
   --icon-fill: none;
   fill: var(--icon-fill);
 }
 
-// Stroke width
+// Stroke width (native SVG attribute)
 $stroke-widths: (0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3);
 @each $w in $stroke-widths {
-  .#{$icon-prefix}[data-stroke-width="#{$w}"] {
+  .#{$icon-prefix}[stroke-width="#{$w}"] {
     --icon-stroke-width: #{$w};
     stroke-width: #{$w};
   }
