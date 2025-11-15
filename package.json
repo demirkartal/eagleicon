@@ -2,21 +2,23 @@
   "name": "@demirkartal/eagleicon",
   "version": "0.0.4",
   "description": "Lightweight SVG icon library",
-  "keywords": [
-    "icon",
-    "svg"
-  ],
+  "author": "Cem Demirkartal",
+  "license": "MIT",
+  "type": "module",
   "homepage": "https://github.com/demirkartal/eagleicon",
-  "bugs": {
-    "url": "https://github.com/demirkartal/eagleicon/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/demirkartal/eagleicon.git"
   },
-  "license": "MIT",
-  "author": "Cem Demirkartal",
-  "main": "dist/css/eagleicon.css",
+  "bugs": {
+    "url": "https://github.com/demirkartal/eagleicon/issues"
+  },
+  "keywords": [
+    "icon",
+    "svg"
+  ],
+  "main": "dist/js/eagleicon.mjs",
+  "types": "dist/js/eagleicon.d.ts",
   "files": [
     "dist/"
   ],
@@ -29,15 +31,17 @@
     "lint:fix": "eslint --fix src/",
     "lint:fix-build": "eslint --fix dist/",
     "test": "echo \"No tests specified\" && exit 0",
-    "tsc:build": "tsc"
+    "tsc:build": "tsc",
+    "sprite": "node generate-sprite.js --src src/svg --output dist/svg/eagleicon.svg"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.5.0",
     "eslint": "^9.39.1",
-    "eslint-plugin-tsdoc": "^0.4.0",
+    "eslint-plugin-tsdoc": "^0.5.0",
+    "js-beautify": "^1.15.4",
     "sass": "^1.93.3",
     "terser": "^5.44.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.3"
+    "typescript-eslint": "^8.46.4"
   }
 }
