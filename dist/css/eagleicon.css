@@ -16,8 +16,32 @@
 }
 
 /* Attribute-based helpers */
-.eagleicon[data-rotate] {
-  transform: rotate(attr(data-rotate deg));
+.eagleicon[data-rotate="45"] {
+  transform: rotate(45deg);
+}
+
+.eagleicon[data-rotate="90"] {
+  transform: rotate(90deg);
+}
+
+.eagleicon[data-rotate="135"] {
+  transform: rotate(135deg);
+}
+
+.eagleicon[data-rotate="180"] {
+  transform: rotate(180deg);
+}
+
+.eagleicon[data-rotate="225"] {
+  transform: rotate(225deg);
+}
+
+.eagleicon[data-rotate="270"] {
+  transform: rotate(270deg);
+}
+
+.eagleicon[data-rotate="315"] {
+  transform: rotate(315deg);
 }
 
 .eagleicon[data-flip=horizontal] {
@@ -63,9 +87,64 @@
   stroke-linejoin: miter;
 }
 
-.eagleicon[data-stroke-width] {
-  --icon-stroke-width: attr(data-stroke-width px);
-  stroke-width: var(--icon-stroke-width);
+.eagleicon[data-stroke-width="0.25"] {
+  --icon-stroke-width: 0.25;
+  stroke-width: 0.25;
+}
+
+.eagleicon[data-stroke-width="0.5"] {
+  --icon-stroke-width: 0.5;
+  stroke-width: 0.5;
+}
+
+.eagleicon[data-stroke-width="0.75"] {
+  --icon-stroke-width: 0.75;
+  stroke-width: 0.75;
+}
+
+.eagleicon[data-stroke-width="1"] {
+  --icon-stroke-width: 1;
+  stroke-width: 1;
+}
+
+.eagleicon[data-stroke-width="1.25"] {
+  --icon-stroke-width: 1.25;
+  stroke-width: 1.25;
+}
+
+.eagleicon[data-stroke-width="1.5"] {
+  --icon-stroke-width: 1.5;
+  stroke-width: 1.5;
+}
+
+.eagleicon[data-stroke-width="1.75"] {
+  --icon-stroke-width: 1.75;
+  stroke-width: 1.75;
+}
+
+.eagleicon[data-stroke-width="2"] {
+  --icon-stroke-width: 2;
+  stroke-width: 2;
+}
+
+.eagleicon[data-stroke-width="2.25"] {
+  --icon-stroke-width: 2.25;
+  stroke-width: 2.25;
+}
+
+.eagleicon[data-stroke-width="2.5"] {
+  --icon-stroke-width: 2.5;
+  stroke-width: 2.5;
+}
+
+.eagleicon[data-stroke-width="2.75"] {
+  --icon-stroke-width: 2.75;
+  stroke-width: 2.75;
+}
+
+.eagleicon[data-stroke-width="3"] {
+  --icon-stroke-width: 3;
+  stroke-width: 3;
 }
 
 /*# sourceMappingURL=eagleicon.css.map */
