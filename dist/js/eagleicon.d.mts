@@ -7,6 +7,6 @@ export default class EagleIcon {
   protected prefix: string;
   protected spriteUrl: string;
   constructor(spriteUrl: string, prefix?: string);
-  svgElement(id: string): SVGElement;
+  svgElement(id: string, extraClasses?: string[], extraAttributes?: Record<string, string>): SVGElement;
 }
 // # sourceMappingURL=eagleicon.d.mts.map
