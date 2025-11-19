@@ -1,6 +1,6 @@
 {
   "name": "@demirkartal/eagleicon",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Lightweight SVG icon library",
   "author": "Cem Demirkartal",
   "license": "MIT",
@@ -35,13 +35,13 @@
     "sprite": "node generate-sprite.js --src src/svg --output dist/svg/eagleicon.svg"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.5.0",
+    "@stylistic/eslint-plugin": "^5.6.1",
     "eslint": "^9.39.1",
     "eslint-plugin-tsdoc": "^0.5.0",
     "js-beautify": "^1.15.4",
-    "sass": "^1.93.3",
+    "sass": "^1.94.1",
     "terser": "^5.44.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.4"
+    "typescript-eslint": "^8.47.0"
   }
 }
