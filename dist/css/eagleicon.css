@@ -1,11 +1,7 @@
 /*!
- * EagleICON v0.0.4
+ * EagleICON v0.0.5
  * Copyright 2022-2025 Cem Demirkartal
  * Licensed under the MIT License
- *
- * NOTE: --icon-fill and --icon-stroke-width are used to transfer
- * user-defined attribute values (fill, stroke-width) to the SVG sprite
- * via CSS variables for dynamic styling.
  */
 .eagleicon {
   display: inline-block;
@@ -57,13 +53,16 @@
   transform: scaleY(-1);
 }
 
-/* Fill */
-.eagleicon[fill] {
+/* Fill & Stroke width
+ * NOTE: --icon-fill and --icon-stroke-width are used to transfer
+ * user-defined attribute values (fill, stroke-width) to the SVG sprite
+ * via CSS variables for dynamic styling.
+ */
+.eagleicon[fill] use {
   --icon-fill: attr(fill);
 }
 
-/* Stroke width */
-.eagleicon[stroke-width] {
+.eagleicon[stroke-width] use {
   --icon-stroke-width: attr(stroke-width);
 }
 

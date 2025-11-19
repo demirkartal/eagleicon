@@ -1,5 +1,5 @@
 /*!
- * EagleICON v0.0.4
+ * EagleICON v0.0.5
  * Copyright 2022-2025 Cem Demirkartal
  * Licensed under the MIT License
  */
