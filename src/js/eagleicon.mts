@@ -1,5 +1,5 @@
 /*!
- * EagleICON v0.0.4
+ * EagleICON v0.0.5
  * Copyright 2022-2025 Cem Demirkartal
  * Licensed under the MIT License
  */
@@ -27,12 +27,10 @@ export default class EagleIcon {
    *
    * @param spriteUrl - URL to the SVG sprite file.
    * @param prefix - CSS class prefix for icons.
-   * @throws TypeError - If spriteUrl is not a non-empty string.
+   * @throws TypeError - Throws if `spriteUrl` is not a string or is an
+   * empty/whitespace-only string.
    */
-  public constructor(
-    spriteUrl: string,
-    prefix = 'eagleicon'
-  ) {
+  public constructor(spriteUrl: string, prefix = 'eagleicon') {
     if (typeof spriteUrl !== 'string' || !spriteUrl.trim()) {
       throw new TypeError('EagleIcon: spriteUrl must be a non-empty string.');
     }
@@ -55,15 +53,21 @@ export default class EagleIcon {
     extraAttributes: Record<string, string> = {}
   ): SVGElement {
     if (typeof id !== 'string' || !id.trim()) {
-      throw new TypeError('EagleIcon.svgElement: id must be a non-empty string.');
+      throw new TypeError(
+        'EagleIcon.svgElement: id must be a non-empty string.'
+      );
     }
 
-    const svgElem = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    // Create <svg> element
+    const svgElem = document.createElementNS(
+      'http://www.w3.org/2000/svg',
+      'svg'
+    );
 
     // Add CSS classes
     svgElem.classList.add(this.prefix, ...extraClasses);
 
-    // Add additional attributes
+    // Add Attributes
     for (const key of Object.keys(extraAttributes)) {
       const value = extraAttributes[key];
       if (typeof value === 'string') {
@@ -71,7 +75,11 @@ export default class EagleIcon {
       }
     }
 
-    const useElem = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    // Create <use> element
+    const useElem = document.createElementNS(
+      'http://www.w3.org/2000/svg',
+      'use'
+    );
     useElem.setAttribute('href', `${this.spriteUrl}#${id}`);
     svgElem.append(useElem);
 
