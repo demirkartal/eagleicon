@@ -15,33 +15,37 @@
   },
   "keywords": [
     "icon",
-    "svg"
+    "svg",
+    "sprite"
   ],
   "main": "dist/js/eagleicon.mjs",
+  "module": "dist/js/eagleicon.mjs",
   "types": "dist/js/eagleicon.d.ts",
+  "style": "dist/css/eagleicon.css",
   "files": [
     "dist/"
   ],
   "scripts": {
-    "build": "npm run build:sass && npm run build:tsc",
+    "build": "npm run build:sass && npm run build:sprite && npm run build:tsc",
     "build:sass": "sass --style=expanded src/scss/eagleicon.scss:dist/css/eagleicon.css",
+    "build:sprite": "npm run sprite",
     "build:tsc": "npm run lint:fix && npm run tsc:build && npm run lint:fix-build",
     "lint": "eslint src/",
     "lint:build": "eslint dist/",
     "lint:fix": "eslint --fix src/",
     "lint:fix-build": "eslint --fix dist/",
+    "sprite": "node generate-sprite.js --src src/svg --output dist/svg/eagleicon.svg",
     "test": "echo \"No tests specified\" && exit 0",
-    "tsc:build": "tsc",
-    "sprite": "node generate-sprite.js --src src/svg --output dist/svg/eagleicon.svg"
+    "tsc:build": "tsc"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.6.1",
-    "eslint": "^9.39.1",
-    "eslint-plugin-tsdoc": "^0.5.0",
+    "@stylistic/eslint-plugin": "^5.9.0",
+    "eslint": "^10.0.2",
+    "eslint-plugin-tsdoc": "^0.5.2",
     "js-beautify": "^1.15.4",
-    "sass": "^1.94.1",
-    "terser": "^5.44.1",
+    "sass": "^1.97.3",
+    "terser": "^5.46.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.47.0"
+    "typescript-eslint": "^8.56.1"
   }
 }
