@@ -1,6 +1,6 @@
 {
   "name": "@demirkartal/eagleicon",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Lightweight SVG icon library",
   "author": "Cem Demirkartal",
   "license": "MIT",
@@ -20,8 +20,8 @@
   ],
   "main": "dist/js/eagleicon.mjs",
   "module": "dist/js/eagleicon.mjs",
-  "types": "dist/js/eagleicon.d.ts",
   "style": "dist/css/eagleicon.css",
+  "types": "dist/js/eagleicon.d.ts",
   "files": [
     "dist/"
   ],
