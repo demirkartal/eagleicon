@@ -75,10 +75,10 @@ for (const dirent of readdirSync(iconsDir, { withFileTypes: true })) {
       const fillMatch = svgTagMatch[0].match(/fill="([^"]+)"/);
       let symbolAttrs = `id="${id}" viewBox="${viewBoxMatch[1]}"`;
       if (fillMatch) {
-        symbolAttrs += ` fill="var(--icon-fill, ${fillMatch[1]})"`;
+        symbolAttrs += ` fill="var(--svg-fill, ${fillMatch[1]})"`;
       }
       if (strokeWidthMatch) {
-        symbolAttrs += ` stroke-width="var(--icon-stroke-width, ${strokeWidthMatch[1]})"`;
+        symbolAttrs += ` stroke-width="var(--svg-stroke-width, ${strokeWidthMatch[1]})"`;
       }
       symbols += `<symbol ${symbolAttrs}>${trimmedShape}</symbol>`;
     }
