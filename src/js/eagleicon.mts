@@ -1,6 +1,6 @@
 /*!
- * EagleICON v0.0.5
- * Copyright 2022-2025 Cem Demirkartal
+ * EagleICON v0.0.6
+ * Copyright 2022-2026 Cem Demirkartal
  * Licensed under the MIT License
  */
 
@@ -8,10 +8,15 @@
  * EagleIcon provides SVG icon rendering via sprite <use> references.
  *
  * @example
- * const icon = new EagleIcon('/sprite.svg');
+ * const icon = new EagleIcon(document, '/sprite.svg');
  * document.body.append(icon.svgElement('home'));
  */
 export default class EagleIcon {
+  /**
+   * Document object for DOM operations.
+   */
+  protected doc: Document;
+
   /**
    * CSS class prefix for icons.
    */
@@ -25,17 +30,23 @@ export default class EagleIcon {
   /**
    * Constructor.
    *
+   * @param doc - Document object for DOM operations.
    * @param spriteUrl - URL to the SVG sprite file.
    * @param prefix - CSS class prefix for icons.
    * @throws TypeError - Throws if `spriteUrl` is not a string or is an
    * empty/whitespace-only string.
    */
-  public constructor(spriteUrl: string, prefix = 'eagleicon') {
+  public constructor(
+    doc: Document,
+    spriteUrl: string,
+    prefix = 'eagleicon'
+  ) {
     if (typeof spriteUrl !== 'string' || !spriteUrl.trim()) {
       throw new TypeError('EagleIcon: spriteUrl must be a non-empty string.');
     }
     this.spriteUrl = spriteUrl;
     this.prefix = prefix;
+    this.doc = doc;
   }
 
   /**
@@ -59,10 +70,7 @@ export default class EagleIcon {
     }
 
     // Create <svg> element
-    const svgElem = document.createElementNS(
-      'http://www.w3.org/2000/svg',
-      'svg'
-    );
+    const svgElem = this.doc.createElementNS('http://www.w3.org/2000/svg', 'svg');
 
     // Add CSS classes
     svgElem.classList.add(this.prefix, ...extraClasses);
@@ -76,10 +84,7 @@ export default class EagleIcon {
     }
 
     // Create <use> element
-    const useElem = document.createElementNS(
-      'http://www.w3.org/2000/svg',
-      'use'
-    );
+    const useElem = this.doc.createElementNS('http://www.w3.org/2000/svg', 'use');
     useElem.setAttribute('href', `${this.spriteUrl}#${id}`);
     svgElem.append(useElem);
 
