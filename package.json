@@ -39,9 +39,11 @@
     "tsc:build": "tsc"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.9.0",
     "eslint": "^10.0.2",
     "eslint-plugin-tsdoc": "^0.5.2",
+    "globals": "^17.4.0",
     "js-beautify": "^1.15.4",
     "sass": "^1.97.3",
     "terser": "^5.46.0",
