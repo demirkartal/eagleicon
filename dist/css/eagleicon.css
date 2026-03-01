@@ -1,6 +1,6 @@
 /*!
- * EagleICON v0.0.5
- * Copyright 2022-2025 Cem Demirkartal
+ * EagleICON v0.0.6
+ * Copyright 2022-2026 Cem Demirkartal
  * Licensed under the MIT License
  */
 .eagleicon {
@@ -9,9 +9,9 @@
   height: 1em;
   vertical-align: -0.125em;
   text-align: center;
-  line-height: 1;
-  font-size: inherit;
   color: inherit;
+  font-size: inherit;
+  line-height: 1;
   user-select: none;
 }
 
@@ -54,16 +54,16 @@
 }
 
 /* Fill & Stroke width
- * NOTE: --icon-fill and --icon-stroke-width are used to transfer
+ * NOTE: --svg-fill and --svg-stroke-width are used to transfer
  * user-defined attribute values (fill, stroke-width) to the SVG sprite
  * via CSS variables for dynamic styling.
  */
 .eagleicon[fill] use {
-  --icon-fill: attr(fill);
+  --svg-fill: attr(fill);
 }
 
 .eagleicon[stroke-width] use {
-  --icon-stroke-width: attr(stroke-width);
+  --svg-stroke-width: attr(stroke-width);
 }
 
 /*# sourceMappingURL=eagleicon.css.map */
