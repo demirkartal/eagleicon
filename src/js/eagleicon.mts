@@ -13,19 +13,29 @@
  */
 export default class EagleIcon {
   /**
+   * Global counter for generating unique, collision-free element IDs.
+   */
+  private static idCounter = 0;
+
+  /**
+   * Standard SVG Namespace URI.
+   */
+  private static readonly SVG_NS = 'http://www.w3.org/2000/svg';
+
+  /**
    * Document object for DOM operations.
    */
-  protected doc: Document;
+  private readonly doc: Document;
 
   /**
    * CSS class prefix for icons.
    */
-  protected prefix: string;
+  private readonly prefix: string;
 
   /**
    * URL of the SVG sprite file.
    */
-  protected spriteUrl: string;
+  private readonly spriteUrl: string;
 
   /**
    * Constructor.
@@ -37,7 +47,7 @@ export default class EagleIcon {
    * empty/whitespace-only string.
    */
   public constructor(doc: Document, spriteUrl: string, prefix = 'eagleicon') {
-    if (!spriteUrl.trim()) {
+    if (typeof spriteUrl !== 'string' || !spriteUrl.trim()) {
       throw new TypeError('EagleIcon: spriteUrl must be a non-empty string.');
     }
     this.spriteUrl = spriteUrl;
@@ -61,28 +71,32 @@ export default class EagleIcon {
     extraAttributes: Record<string, string> = {},
     title?: string,
   ): SVGElement {
-    if (!id.trim()) {
+    if (typeof id !== 'string' || !id.trim()) {
       throw new TypeError(
         'EagleIcon.svgElement: id must be a non-empty string.',
       );
     }
 
     // Create <svg> element
-    const svgElem = this.doc.createElementNS(
-      'http://www.w3.org/2000/svg',
-      'svg',
-    );
+    const svgElem = this.doc.createElementNS(EagleIcon.SVG_NS, 'svg');
+    svgElem.setAttribute('role', 'img');
 
-    // Add CSS classes
-    svgElem.classList.add(this.prefix, ...extraClasses);
+    // Add unique CSS classes (ES2020 Set spreads efficiently)
+    const classes = [...new Set([this.prefix, ...extraClasses])].filter(
+      Boolean,
+    );
+    if (classes.length > 0) {
+      svgElem.classList.add(...classes);
+    }
 
     // Accessibility
-    if (title) {
-      const titleElem = this.doc.createElementNS(
-        'http://www.w3.org/2000/svg',
-        'title',
-      );
+    if (title?.trim()) {
+      EagleIcon.idCounter += 1;
+      const titleId = `ei-title-${String(EagleIcon.idCounter)}`;
+      const titleElem = this.doc.createElementNS(EagleIcon.SVG_NS, 'title');
+      titleElem.id = titleId;
       titleElem.textContent = title;
+      svgElem.setAttribute('aria-labelledby', titleId);
       svgElem.append(titleElem);
     }
     else {
@@ -95,10 +109,7 @@ export default class EagleIcon {
     }
 
     // Create <use> element
-    const useElem = this.doc.createElementNS(
-      'http://www.w3.org/2000/svg',
-      'use',
-    );
+    const useElem = this.doc.createElementNS(EagleIcon.SVG_NS, 'use');
     useElem.setAttribute('href', `${this.spriteUrl}#${id}`);
     svgElem.append(useElem);
 
