@@ -4,9 +4,11 @@
  * Licensed under the MIT License
  */
 export default class EagleIcon {
-  protected doc: Document;
-  protected prefix: string;
-  protected spriteUrl: string;
+  private static idCounter;
+  private static readonly SVG_NS;
+  private readonly doc;
+  private readonly prefix;
+  private readonly spriteUrl;
   constructor(doc: Document, spriteUrl: string, prefix?: string);
   svgElement(id: string, extraClasses?: string[], extraAttributes?: Record<string, string>, title?: string): SVGElement;
 }
