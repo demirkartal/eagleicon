@@ -1,5 +1,5 @@
 /*!
- * EagleICON v0.0.6
+ * EagleICON v0.0.7
  * Copyright 2022-2026 Cem Demirkartal
  * Licensed under the MIT License
  */
@@ -36,12 +36,8 @@ export default class EagleIcon {
    * @throws TypeError - Throws if `spriteUrl` is not a string or is an
    * empty/whitespace-only string.
    */
-  public constructor(
-    doc: Document,
-    spriteUrl: string,
-    prefix = 'eagleicon'
-  ) {
-    if (typeof spriteUrl !== 'string' || !spriteUrl.trim()) {
+  public constructor(doc: Document, spriteUrl: string, prefix = 'eagleicon') {
+    if (!spriteUrl.trim()) {
       throw new TypeError('EagleIcon: spriteUrl must be a non-empty string.');
     }
     this.spriteUrl = spriteUrl;
@@ -55,36 +51,54 @@ export default class EagleIcon {
    * @param id - Icon id (symbol id in the sprite).
    * @param extraClasses - Additional CSS classes for the SVG element.
    * @param extraAttributes - Additional attributes for the SVG element.
+   * @param title - Optional title for accessibility (renders a <title> tag).
    * @returns SVGElement with a <use> referencing the sprite symbol.
    * @throws TypeError - If id is not a non-empty string.
    */
   public svgElement(
     id: string,
     extraClasses: string[] = [],
-    extraAttributes: Record<string, string> = {}
+    extraAttributes: Record<string, string> = {},
+    title?: string,
   ): SVGElement {
-    if (typeof id !== 'string' || !id.trim()) {
+    if (!id.trim()) {
       throw new TypeError(
-        'EagleIcon.svgElement: id must be a non-empty string.'
+        'EagleIcon.svgElement: id must be a non-empty string.',
       );
     }
 
     // Create <svg> element
-    const svgElem = this.doc.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    const svgElem = this.doc.createElementNS(
+      'http://www.w3.org/2000/svg',
+      'svg',
+    );
 
     // Add CSS classes
     svgElem.classList.add(this.prefix, ...extraClasses);
 
+    // Accessibility
+    if (title) {
+      const titleElem = this.doc.createElementNS(
+        'http://www.w3.org/2000/svg',
+        'title',
+      );
+      titleElem.textContent = title;
+      svgElem.append(titleElem);
+    }
+    else {
+      svgElem.setAttribute('aria-hidden', 'true');
+    }
+
     // Add Attributes
-    for (const key of Object.keys(extraAttributes)) {
-      const value = extraAttributes[key];
-      if (typeof value === 'string') {
-        svgElem.setAttribute(key, value);
-      }
+    for (const [key, value] of Object.entries(extraAttributes)) {
+      svgElem.setAttribute(key, value);
     }
 
     // Create <use> element
-    const useElem = this.doc.createElementNS('http://www.w3.org/2000/svg', 'use');
+    const useElem = this.doc.createElementNS(
+      'http://www.w3.org/2000/svg',
+      'use',
+    );
     useElem.setAttribute('href', `${this.spriteUrl}#${id}`);
     svgElem.append(useElem);
 
