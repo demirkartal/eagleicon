@@ -1,5 +1,5 @@
 /*!
- * EagleICON v0.0.6
+ * EagleICON v0.0.7
  * Copyright 2022-2026 Cem Demirkartal
  * Licensed under the MIT License
  */
@@ -15,7 +15,7 @@
   user-select: none;
 }
 
-/* Rotation */
+/* Rotation selectors */
 .eagleicon[data-rotate="45"] {
   transform: rotate(45deg);
 }
@@ -44,7 +44,7 @@
   transform: rotate(315deg);
 }
 
-/* Flip */
+/* Flip selectors */
 .eagleicon[data-flip=horizontal] {
   transform: scaleX(-1);
 }
@@ -53,11 +53,7 @@
   transform: scaleY(-1);
 }
 
-/* Fill & Stroke width
- * NOTE: --svg-fill and --svg-stroke-width are used to transfer
- * user-defined attribute values (fill, stroke-width) to the SVG sprite
- * via CSS variables for dynamic styling.
- */
+/* Dynamic properties bridge via typed attr expressions */
 .eagleicon[fill] use {
   --svg-fill: attr(fill);
 }
