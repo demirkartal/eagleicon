@@ -1,5 +1,5 @@
 /*!
- * EagleICON v0.0.6
+ * EagleICON v0.0.7
  * Copyright 2022-2026 Cem Demirkartal
  * Licensed under the MIT License
  */
@@ -8,6 +8,6 @@ export default class EagleIcon {
   protected prefix: string;
   protected spriteUrl: string;
   constructor(doc: Document, spriteUrl: string, prefix?: string);
-  svgElement(id: string, extraClasses?: string[], extraAttributes?: Record<string, string>): SVGElement;
+  svgElement(id: string, extraClasses?: string[], extraAttributes?: Record<string, string>, title?: string): SVGElement;
 }
 // # sourceMappingURL=eagleicon.d.mts.map
