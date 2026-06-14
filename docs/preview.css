@@ -1,0 +1,228 @@
+/* Layout & grid styles */
+body {
+  margin: 2rem;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  color: #1a202c;
+  background-color: #fafafa;
+}
+
+/* 🎯 ONLY APPLY THE PREVIEW SLIDER SIZE TO ICONS INSIDE THE GRID */
+.icon-grid .eagleicon {
+  width: var(--eagleicon-preview-size, 16px);
+  height: var(--eagleicon-preview-size, 16px);
+}
+
+/* Control Panel Layout */
+#icon-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+#icon-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+#icon-controls select,
+#icon-controls input[type="range"] {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+#fontsize-value {
+  font-variant-numeric: tabular-nums;
+  color: #64748b;
+  min-width: 2.5rem;
+}
+
+/* Icon Grid Layout */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.icon-item {
+  padding: 1rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.icon-item:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Preview & text styles */
+.icon-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.icon-id {
+  color: #64748b;
+  font-size: 0.75rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+/* Demo Section Layout */
+.demo-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+/* 🎯 ENSURE DEMO SECTION ICONS SCALE RELATIVE TO THEIR INLINE TEXT (1em) */
+.demo-section .eagleicon {
+  width: 1em;
+  height: 1em;
+}
+
+.demo-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge-lightweight {
+  background: #10b981;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.demo-description {
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.demo-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.demo-card {
+  background: #f8fafc;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.demo-card p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25em;
+}
+
+/* Button & Actions Styling */
+.demo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.6em 1.2em;
+  height: 2.5rem;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #334155;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.15s ease;
+}
+
+.demo-btn:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.demo-btn-primary {
+  background: #0f172a;
+  color: white;
+  border-color: #0f172a;
+}
+
+.demo-btn-primary:hover {
+  background: #1e293b;
+  border-color: #1e293b;
+}
+
+.demo-btn-icon {
+  width: 2.5rem;
+  padding: 0;
+}
+
+.demo-btn:active {
+  transform: scale(0.98);
+}
+
+/* Layout Utilities */
+.demo-row-margin {
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+/* Typographic Scales */
+.demo-text-16 {
+  font-size: 1rem;
+}
+.demo-text-20 {
+  font-size: 1.25rem;
+}
+.demo-text-13 {
+  font-size: 0.8125rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}

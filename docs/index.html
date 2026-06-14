@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EagleICON Preview</title>
+  <meta name="description" content="Preview EagleICON SVG icons and test their appearance with various settings.">
+  <link rel="stylesheet" href="../dist/css/eagleicon.css">
+  <link rel="stylesheet" href="preview.css">
+</head>
+
+<body>
+  <h1>EagleICON Preview</h1>
+
+  <!-- Icon display controls -->
+  <div id="icon-controls">
+    <label>
+      Font size:
+      <input id="fontsize-meter" type="range" min="8" max="64" value="16" step="1" aria-label="Font size slider">
+      <output id="fontsize-value">16px</output>
+    </label>
+    <label>
+      Stroke:
+      <select id="stroke-switch">
+        <option value="">default</option>
+        <option value="0.25">0.25</option>
+        <option value="0.5">0.5</option>
+        <option value="0.75">0.75</option>
+        <option value="1">1</option>
+        <option value="1.25">1.25</option>
+        <option value="1.5">1.5</option>
+        <option value="1.75">1.75</option>
+        <option value="2">2</option>
+        <option value="2.25">2.25</option>
+        <option value="2.5">2.5</option>
+        <option value="2.75">2.75</option>
+        <option value="3">3</option>
+      </select>
+    </label>
+    <label>
+      Linecap:
+      <select id="linecap-switch">
+        <option value="">default</option>
+        <option value="round">round</option>
+        <option value="square">square</option>
+        <option value="butt">butt</option>
+      </select>
+    </label>
+    <label>
+      Linejoin:
+      <select id="linejoin-switch">
+        <option value="">default</option>
+        <option value="round">round</option>
+        <option value="bevel">bevel</option>
+        <option value="miter">miter</option>
+      </select>
+    </label>
+    <label>
+      Rotate:
+      <select id="rotate-switch">
+        <option value="">default</option>
+        <option value="45">45</option>
+        <option value="90">90</option>
+        <option value="135">135</option>
+        <option value="180">180</option>
+        <option value="225">225</option>
+        <option value="270">270</option>
+        <option value="315">315</option>
+      </select>
+    </label>
+    <label>
+      Flip:
+      <select id="flip-switch">
+        <option value="">default</option>
+        <option value="horizontal">horizontal</option>
+        <option value="vertical">vertical</option>
+      </select>
+    </label>
+    <label>
+      Fill:
+      <select id="fill-switch">
+        <option value="">default</option>
+        <option value="currentColor">currentColor</option>
+        <option value="none">none</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- Icon grid will be populated by preview.js -->
+  <div id="icon-grid" class="icon-grid"></div>
+
+  <!-- Demo section: text + icon and button examples -->
+  <section class="demo-section" aria-labelledby="demos-title">
+    <div class="demo-header">
+      <h2 id="demos-title">Enterprise Ready Implementation</h2>
+      <span class="badge-lightweight">100% Zero-Bloat</span>
+    </div>
+    <p class="demo-description">Engineered for high-performance web applications where every byte counts. Perfect
+      alignment and seamless scaling by default.</p>
+
+    <div class="demo-row">
+      <div class="demo-card demo-text-16">
+        <p>Hello <span aria-hidden="true">
+            <svg class="eagleicon">
+              <use href="../dist/svg/eagleicon.svg#arrow-down"></use>
+            </svg>
+          </span> world — icon aligns with text baseline.</p>
+      </div>
+      <div class="demo-card demo-text-20">
+        <p>Larger <span aria-hidden="true">
+            <svg class="eagleicon">
+              <use href="../dist/svg/eagleicon.svg#arrow-up"></use>
+            </svg>
+          </span> text — check stroke scaling and alignment.</p>
+      </div>
+      <div class="demo-card demo-text-13">
+        <p>Compact <span aria-hidden="true">
+            <svg class="eagleicon">
+              <use href="../dist/svg/eagleicon.svg#arrow-right"></use>
+            </svg>
+          </span> sample.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="demo-row demo-row-margin">
+      <button class="demo-btn demo-btn-primary" type="button">
+        <span aria-hidden="true">
+          <svg class="eagleicon">
+            <use href="../dist/svg/eagleicon.svg#arrow-left"></use>
+          </svg>
+        </span>
+        Button with icon (left)
+      </button>
+
+      <button class="demo-btn" type="button">
+        Button without icon
+      </button>
+
+      <button class="demo-btn" type="button">
+        Submit
+        <span aria-hidden="true">
+          <svg class="eagleicon">
+            <use href="../dist/svg/eagleicon.svg#arrow-right"></use>
+          </svg>
+        </span>
+      </button>
+
+      <button class="demo-btn demo-btn-icon" type="button" aria-label="Scroll to top">
+        <span aria-hidden="true">
+          <svg class="eagleicon">
+            <use href="../dist/svg/eagleicon.svg#arrow-up"></use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <script defer type="module" src="preview.js"></script>
+</body>
+
+</html>
